@@ -1,5 +1,123 @@
-.video {
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: calc(100vh - 10px);
+  overflow: hidden;
+  position: relative;
+}
+
+.container .wrapper .row1 {
+  height: 1.5rem;
+  background-color: rgba(25, 25, 240, 0.781);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   width: 100vw;
+  /* padding: 1rem 0; */
+}
+
+.container .wrapper .row1 .flash {
+  color: #ffff;
+  font-size: 15px;
+}
+
+.container .wrapper .row1 .hyperlink {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 850;
+  text-decoration: underline;
+}
+
+.container .navbar {
+  /* height: 3rem; */
+  position: fixed;
+  top: 1.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  width: 100vw;
+  padding: 1rem 0;
+}
+
+.container .navbar .row2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+.container .navbar .row2 .logo-img {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.container .navbar .row2 .menu-bar ul {
+  display: flex;
+}
+
+.container .navbar .row2 .menu-bar {
+  width: 25vw;
+}
+
+.container .navbar .row2 .menu-bar ul li {
+  padding: 10px;
+  list-style: none;
+  font-size: 1.2r em;
+}
+
+.video {
+  position: absolute;
+  /* right: 0%;
+  bottom: 0; */
+  width: 100vw;
+
   height: 80vh;
   object-fit: cover;
+  z-index: -1;
+  background-size: contain;
+  margin-right: 0;
+}
+
+.section {
+  padding: 2rem;
+  z-index: auto;
+  justify-content: center;
+  justify-items: center;
+  /* display: flex; */
+  /* width: 100%; */
+}
+
+.section .services {
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+}
+
+span {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  /* margin-left: 2rem; */
+  /* position: absolute; */
+}
+
+card .card-content {
+  padding-top: 1rem;
+  /* display: grid; */
+}
+
+.footer {
+  background: black;
+  color: white;
+  height: 15vh;
+  justify-content: baseline;
+  display: flex;
 }
